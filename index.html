@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/d6521b55bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="titulo-bem-vindo" class="hidden">Bem-vindo(a)!</h1>
+    <section class="container">
+        <form class="formulário">
+            <h1 class="titulo">Login</h1>
+            <div class="nome-container input-container">
+                <input type="email" name="email" class="input-box" id="email" placeholder="E-mail" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="senha-container input-container">
+                <input type="password" name="password" class="input-box" id="senha" placeholder="Senha" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="msg-dados-invalidos">
+                E-mail ou senha incorreta.
+            </div>
+            <div>
+                <label><input type="checkbox" name="checkbox" id="checkbox">Lembrar-me</label>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+            <button type="submit" class="botao">Entrar</button>
+            <p>Não tem uma conta? <a href="cadastro.html">Registrar</a></p>
+        </form>
+    </section>
+    <footer>
+        <h5 hidden>Orlando Tsuji</h5>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

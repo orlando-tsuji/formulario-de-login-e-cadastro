@@ -1,0 +1,172 @@
+@import url(cadastro.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body{
+    display: flex;
+    background-image: url(fundo-de-papel-de-parede-escuro-estetico-luz-de-neon.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    background-position: center;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg-dados-invalidos{
+    text-align: start;
+    display: none;
+    margin-top: -10px;
+    color: rgb(252, 32, 32);
+}
+
+
+h1{
+    font-size: 2em;
+    font-weight: 800;
+}
+
+#titulo-bem-vindo{
+    text-align: center;
+    font-size: 4em;
+    opacity: 0;
+}
+
+#titulo-bem-vindo.fade-in{
+    opacity: 1;
+    transition: 2s;
+}
+
+.hidden{
+    display: none;
+}
+
+.container{
+    width: 400px;
+}
+
+.formulário{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(240, 255, 255, 0.178);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.35);
+    gap: 1.5em;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 2em 1.5em;
+}
+
+.input-container{
+    position: relative;
+}
+
+.fa-solid{
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    transform: translateY(-50%);
+}
+
+.input-box, .botao{
+    width: 300px;
+    margin: auto;
+    padding: .9em 1.1em;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background: transparent;
+    font-weight: 600;
+    outline: none;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: auto;
+    font-size: .9em;
+    
+}
+
+#checkbox{
+    margin-right: 0.5em;
+    accent-color: #fff;
+}
+
+
+div a, p a{
+    text-decoration: none;
+}
+
+div a:hover, p a:hover{
+    text-decoration: underline;
+}
+   
+
+input::placeholder{
+    color: #cfcfcf;
+    font-weight: 500;
+    font-size: .9em;
+}
+
+.botao{
+    padding: 0.7em 0;
+    font-size: 1em;
+    border: none;
+    background-color: #4d39ff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover{
+    scale: 1.02;
+    background-color: aqua;
+    color: #000
+}
+
+p{
+    font-size: .8em;
+}
+
+p a{
+    margin-left: .2em;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 1em;
+    margin-top: 2.5em;
+}
+
+@media (max-width: 768px) {
+    #titulo-bem-vindo{
+        font-size: 2.5em;
+    }
+
+    .container{
+        width: 90% !important;
+    }
+
+    div, .input-box, .input-cadastro, .input-box-cadastro, .botao{
+        width: 95%;
+        justify-content: space-around;
+    }
+
+    .data-de-nascimento-container {
+        align-items: center;
+    }
+
+    .verificacao-senha {
+        margin: -10px auto;
+        text-align: center;
+    }
+
+}
